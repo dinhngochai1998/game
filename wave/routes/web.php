@@ -3,6 +3,9 @@
 Route::impersonate();
 
 Route::get('/', '\Wave\Http\Controllers\HomeController@index')->name('wave.home');
+Route::get('/search', '\Wave\Http\Controllers\HomeController@search')->name('wave.search');
+Route::get('/search', '\Wave\Http\Controllers\HomeController@search')->name('wave.search');
+
 Route::get('@{username}', '\Wave\Http\Controllers\ProfileController@index')->name('wave.profile');
 
 // Documentation routes
@@ -36,7 +39,7 @@ Route::group(['middleware' => 'wave'], function () {
 	Route::get('dashboard', '\Wave\Http\Controllers\DashboardController@index')->name('wave.dashboard');
 });
 
-Route::group(['middleware' => 'auth'], function(){
+Route::group(['middleware' => 'auth'], function () {
 	Route::get('settings/{section?}', '\Wave\Http\Controllers\SettingsController@index')->name('wave.settings');
 
 	Route::post('settings/profile', '\Wave\Http\Controllers\SettingsController@profilePut')->name('wave.settings.profile.put');
@@ -55,16 +58,16 @@ Route::group(['middleware' => 'auth'], function(){
 	Route::get('notifications', '\Wave\Http\Controllers\NotificationController@index')->name('wave.notifications');
 	Route::post('notification/read/{id}', '\Wave\Http\Controllers\NotificationController@delete')->name('wave.notification.read');
 
-    /********** Checkout/Billing Routes ***********/
-    Route::post('cancel', '\Wave\Http\Controllers\SubscriptionController@cancel')->name('wave.cancel');
-    Route::view('checkout/welcome', 'theme::welcome');
+	/********** Checkout/Billing Routes ***********/
+	Route::post('cancel', '\Wave\Http\Controllers\SubscriptionController@cancel')->name('wave.cancel');
+	Route::view('checkout/welcome', 'theme::welcome');
 
-    Route::post('subscribe', '\Wave\Http\Controllers\SubscriptionController@subscribe')->name('wave.subscribe');
+	Route::post('subscribe', '\Wave\Http\Controllers\SubscriptionController@subscribe')->name('wave.subscribe');
 	Route::view('trial_over', 'theme::trial_over')->name('wave.trial_over');
 	Route::view('cancelled', 'theme::cancelled')->name('wave.cancelled');
-    Route::post('switch-plans', '\Wave\Http\Controllers\SubscriptionController@switchPlans')->name('wave.switch-plans');
+	Route::post('switch-plans', '\Wave\Http\Controllers\SubscriptionController@switchPlans')->name('wave.switch-plans');
 });
 
-Route::group(['middleware' => 'admin.user'], function(){
-    Route::view('admin/do', 'wave::do');
+Route::group(['middleware' => 'admin.user'], function () {
+	Route::view('admin/do', 'wave::do');
 });

@@ -3,6 +3,9 @@
 namespace Wave\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Genregame;
+use App\Models\Game;
+use App\Models\ContentDescriptor;
 
 class HomeController extends \App\Http\Controllers\Controller
 {
@@ -14,21 +17,25 @@ class HomeController extends \App\Http\Controllers\Controller
      */
     public function index()
     {
-    	if(setting('auth.dashboard_redirect', true) != "null"){
-    		if(!\Auth::guest()){
-    			return redirect('dashboard');
-    		}
-    	}
 
-        $seo = [
+        $genreGame = Genregame::get();
+        $game = Game::with('genreGame', 'contentDescription')->get();
+        // $game = [];
+        // if ($game != null) {
+        //     $game = Game::with('genreGame', 'contentDescription')->get();
+        // }
 
-            'title'         => setting('site.title', 'Laravel Wave'),
-            'description'   => setting('site.description', 'Software as a Service Starter Kit'),
-            'image'         => url('/og_image.png'),
-            'type'          => 'website'
+        $contentDescriptor = ContentDescriptor::get();
 
-        ];
+        return view('game.index', compact('genreGame', 'game', 'contentDescriptor'));
+    }
 
-        return view('theme::home', compact('seo'));
+    public function search(Request $request)
+    {
+        $genreGame = Game::with('genregame')->orderBy('name', 'desc')->get();
+        // dd($genreGame);
+        $game = Game::where('name', 'like', '%' . $request->search . '%')->with('genreGame')->get();
+
+        return view('game.search.index', compact('game', 'genreGame'));
     }
 }
