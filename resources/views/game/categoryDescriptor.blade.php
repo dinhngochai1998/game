@@ -9,32 +9,26 @@
         <div class="wrapper content-wrap">
             <div id="sidebar-left">
                 <div id="block-submenusidebarblock">
-
-
-
                 </div>
-
-
-
             </div>
             <main id="main">
                 <div id="block-pegi-content">
                     <div id="results" typeof="WebPage" class="page">
-                        <h1><span property="schema:name">Kết quả tìm thấy</span></h1>
+                        <h1><span property="schema:name">Chuyên mục</span></h1>
                         <div class="page-content">
-                            <div class="results-count"><span>Đã tìm thấy <strong>{{ count($genreGame) }} kết quả</strong> từ truy vấn của bạn</span></div>
+                            <div class="results-count"></div>
                             <div property="schema:text" class="body text-with-summary">
-                                @foreach ($genreGame as $value)
+                                @foreach ($categoryDescriptor as $value)
                                 <article class="game">
                                     <div class="game-content" style="padding: 25px 25px 0px;">
                                         <div class="description">
                                             <div class="age-rating">
-                                                <a href="{{ route('wave.genre.game.detail', $value->slug) }}">
-                                                    <img src="{{ asset('/storage/'.$value->icon) }}" alt="" />
+                                                <a href="{{ route('wave.descriptor.detail', $value->slug) }}">
+                                                    <img src="{{ asset('/storage/'.$value->image) }}" alt="" />
                                                 </a>
                                             </div>
                                             <div class="info" style="width: 80%;">
-                                                <h3><a style="font-size: 24px;" href="{{ route('wave.genre.game.detail', $value->slug) }}">{{ $value->title }}</a></h3>
+                                                <h3><a style="font-size: 24px;" href="{{ route('wave.descriptor.detail', $value->slug) }}">{{ $value->title }}</a></h3>
                                                 <br>
                                                 <span class="publisher">Đất nước :{{ $value->countryId->name }}</span>
                                                 <span class="content-info">{{ $value->description }}</span>

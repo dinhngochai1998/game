@@ -9,20 +9,14 @@
         <div class="wrapper content-wrap">
             <div id="sidebar-left">
                 <div id="block-submenusidebarblock">
-
-
-
                 </div>
-
-
-
             </div>
             <main id="main">
                 <div id="block-pegi-content">
                     <div id="results" typeof="WebPage" class="page">
-                        <h1><span property="schema:name">Kết quả tìm thấy</span></h1>
+                        <h1><span property="schema:name">Chuyên mục</span></h1>
                         <div class="page-content">
-                            <div class="results-count"><span>Đã tìm thấy <strong>{{ count($genreGame) }} kết quả</strong> từ truy vấn của bạn</span></div>
+                            <div class="results-count"></div>
                             <div property="schema:text" class="body text-with-summary">
                                 @foreach ($genreGame as $value)
                                 <article class="game">

@@ -5,6 +5,11 @@ Route::impersonate();
 Route::get('/', '\Wave\Http\Controllers\HomeController@index')->name('wave.home');
 Route::get('/search', '\Wave\Http\Controllers\HomeController@search')->name('wave.search');
 Route::get('/search', '\Wave\Http\Controllers\HomeController@search')->name('wave.search');
+Route::get('/detail/descriptor/{slug}', '\Wave\Http\Controllers\DetailController@descriptor')->name('wave.descriptor.detail');
+Route::get('/detail/genre-game/{slug}', '\Wave\Http\Controllers\DetailController@genreGame')->name('wave.genre.game.detail');
+Route::get('/category/genre-game/{country}', '\Wave\Http\Controllers\DetailController@categoryGenreGame')->name('wave.cate.genre.game');
+Route::get('/category/descriptor/{country}', '\Wave\Http\Controllers\DetailController@categoryDescriptor')->name('wave.cate.descriptor');
+
 
 Route::get('@{username}', '\Wave\Http\Controllers\ProfileController@index')->name('wave.profile');
 

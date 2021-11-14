@@ -1,8 +1,6 @@
 @extends('theme::layouts.app')
 
 @section('content')
-abc
-
     <div class="relative flex items-center w-full">
         <div class="relative z-20 px-8 mx-auto xl:px-5 max-w-7xl">
 

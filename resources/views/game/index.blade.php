@@ -33,12 +33,12 @@
                                         <div class="intro-content" style="margin:auto;">
 
                                             <div class="field-age-labels-title string">
-                                                Two levels of information as a guide : The PEGI age labels
+                                                HAI CẤP ĐỘ THÔNG TIN NHƯ HƯỚNG DẪN: NHÃN HIỆU PEGI TUỔI
                                             </div>
 
                                             <div class="labels-holder">
                                                 @foreach ($genreGame as $value)
-                                                <div class="field-age-labels entity-reference">
+                                                <div class="field-age-labels entity-reference" style="width: 10%;">
 
 
                                                     <article data-history-node-id="5" role="article" about="/pegi-3" class="label-descriptor">
@@ -53,7 +53,9 @@
                                                             </div>
 
                                                             <div class="field-image image">
-                                                                <img src="{{ asset('storage/'.$value->icon) }}" width="181" height="220" alt="PEGI 3" typeof="foaf:Image" />
+                                                                <a href="{{ route('wave.genre.game.detail', $value->slug) }}">
+                                                                    <img src="{{ asset('storage/'.$value->icon) }}" width="181" height="220" alt="PEGI 3" typeof="foaf:Image" />
+                                                                </a>
                                                             </div>
 
                                                         </div>
@@ -63,12 +65,12 @@
                                             </div>
 
                                             <div class="field-descriptors-title string">
-                                                The Content Descriptors
+                                                MÔ TẢ NỘI DUNG
                                             </div>
 
                                             <div class="labels-holder">
                                                 @foreach ($contentDescriptor as $value)
-                                                <div class="field-descriptors entity-reference">
+                                                <div class="field-descriptors entity-reference" style="width:8%;">
                                                     <article data-history-node-id="12" role="article" about="/drugs" class="label-descriptor">
                                                         <div class="article-content">
 
@@ -80,7 +82,9 @@
                                                             </div>
 
                                                             <div class="field-image image">
-                                                                <img src="{{ asset('storage/'.$value->image) }}" width="219" height="220" alt="Drugs" typeof="foaf:Image" />
+                                                                <a href="{{ route('wave.descriptor.detail', $value->slug) }}">
+                                                                    <img src="{{ asset('storage/'.$value->image) }}" width="219" height="220" alt="Drugs" typeof="foaf:Image" />
+                                                                </a>
                                                             </div>
                                                         </div>
                                                     </article>
@@ -89,7 +93,7 @@
                                             </div>
 
                                             <div class="field-labels-link link">
-                                                <a href="/what-do-the-labels-mean">More info</a>
+                                                <a href="/what-do-the-labels-mean">Hơn nữa</a>
                                             </div>
                                         </div>
                                     </div>

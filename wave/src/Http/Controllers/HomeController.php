@@ -32,10 +32,20 @@ class HomeController extends \App\Http\Controllers\Controller
 
     public function search(Request $request)
     {
-        $genreGame = Game::with('genregame')->orderBy('name', 'desc')->get();
-        // dd($genreGame);
-        $game = Game::where('name', 'like', '%' . $request->search . '%')->with('genreGame')->get();
+        $model = Genregame::orderBy('title');
+        if(!empty($request['country'])) {
+            $model = $model->where('country_id', $request['country']);
+        }
 
-        return view('game.search.index', compact('game', 'genreGame'));
+        if(isset($request['descriptor']) && !empty($request['descriptor'][0])) {
+            $model = $model->whereIn('id', $request['descriptor']);
+        }
+
+        if(!empty($request['search'])) {
+            $model = $model->where('title', 'like', '%' . $request->search . '%');
+        }
+
+        $genreGame =  $model->get();
+        return view('game.search.index', compact('genreGame'));
     }
 }
