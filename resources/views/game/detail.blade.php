@@ -19,10 +19,10 @@
         <main id="main">
         <div class="views-element-container" id="block-views-block-homepage-intro-block-1">
                 <div>
-                    <div class="js-view-dom-id-1603382be561472bf1899ee5e5be0e88bbe5e7bb226a400f505419c452bb0f34">
+                    <div>
                         <div class="views-row">
-                            <article data-history-node-id="17" role="article" about="/pegi-helps-parents-make-informed-decisions-when-buying-video-games" id="home-intro">
-                                <div class="wrapper">
+                            <article id="home-intro">
+                                <div class="wrapper" style="padding-top: 45px;">
                                     <table class="table table-bordered">
                                         <thead>
                                             <tr>

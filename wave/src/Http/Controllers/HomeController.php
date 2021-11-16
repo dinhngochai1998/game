@@ -42,7 +42,7 @@ class HomeController extends \App\Http\Controllers\Controller
         }
 
         if(!empty($request['search'])) {
-            $model = $model->where('title', 'like', '%' . $request->search . '%');
+            $model = $model->where('title', 'like', '%' . $request->search . '%')->orWhere('key_words', 'like', '%' . $request->search . '%');
         }
 
         $genreGame =  $model->get();

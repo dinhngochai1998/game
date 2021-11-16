@@ -9,8 +9,8 @@ Route::get('/detail/descriptor/{slug}', '\Wave\Http\Controllers\DetailController
 Route::get('/detail/genre-game/{slug}', '\Wave\Http\Controllers\DetailController@genreGame')->name('wave.genre.game.detail');
 Route::get('/category/genre-game/{country}', '\Wave\Http\Controllers\DetailController@categoryGenreGame')->name('wave.cate.genre.game');
 Route::get('/category/descriptor/{country}', '\Wave\Http\Controllers\DetailController@categoryDescriptor')->name('wave.cate.descriptor');
-
-
+Route::get('/about', '\Wave\Http\Controllers\AboutController@index')->name('wave.about');
+Route::get('/privacy', '\Wave\Http\Controllers\PrivacyController@index')->name('wave.privacy');
 Route::get('@{username}', '\Wave\Http\Controllers\ProfileController@index')->name('wave.profile');
 
 // Documentation routes
