@@ -32,11 +32,11 @@
                 </li>
 
                 <li>
-                    <a href="/page/contact-us" data-drupal-link-system-path="node/25">Về Chúng tôi</a>
+                    <a href="{{ route('wave.about') }}">Về Chúng tôi</a>
                 </li>
 
                 <li>
-                    <a href="/page/publishers-and-developers" title="Information for game publishers" data-drupal-link-system-path="node/62">Chính sách</a>
+                    <a href="{{ route('wave.privacy') }}" title="Information for game publishers" data-drupal-link-system-path="node/62">Chính sách</a>
                 </li>
             </ul>
         </nav>
