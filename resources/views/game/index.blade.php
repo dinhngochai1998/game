@@ -54,7 +54,7 @@
 
                                                             <div class="field-image image">
                                                                 <a href="{{ route('wave.genre.game.detail', $value->slug) }}">
-                                                                    <img src="{{ asset('storage/'.$value->icon) }}" width="181" height="220" alt="PEGI 3" typeof="foaf:Image" />
+                                                                    <img src="{{ $value->icon ? asset('storage/'.$value->icon) : '' }}" width="181" height="220" alt="PEGI 3" typeof="foaf:Image" />
                                                                 </a>
                                                             </div>
 
