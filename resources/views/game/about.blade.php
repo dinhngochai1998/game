@@ -20,7 +20,7 @@
                     </div>
                 </div>
                 
-                <div class="field-background-image image" style="background:url(https://pegi.info/sites/default/files/default_images/banner.jpg);"></div>
+                <div class="field-background-image image" style="background:url({{ asset('frontend/themes/pegi/images/banner_0.jpg') }});"></div>
 
             </article>
         </div>
