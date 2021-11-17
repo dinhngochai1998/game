@@ -41,7 +41,7 @@
                                                 <div class="field-age-labels entity-reference" style="width: 10%;">
 
 
-                                                    <article data-history-node-id="5" role="article" about="/pegi-3" class="label-descriptor">
+                                                    <article class="label-descriptor">
                                                         <div class="article-content">
 
                                                             <h3><span>{{ $value->title }}</span>
@@ -71,7 +71,7 @@
                                             <div class="labels-holder">
                                                 @foreach ($contentDescriptor as $value)
                                                 <div class="field-descriptors entity-reference" style="width:8%;">
-                                                    <article data-history-node-id="12" role="article" about="/drugs" class="label-descriptor">
+                                                    <article class="label-descriptor">
                                                         <div class="article-content">
 
                                                             <h3><span>{{ $value->title }}</span>
@@ -83,7 +83,7 @@
 
                                                             <div class="field-image image">
                                                                 <a href="{{ route('wave.descriptor.detail', $value->slug) }}">
-                                                                    <img src="{{ asset('storage/'.$value->image) }}" width="219" height="220" alt="Drugs" typeof="foaf:Image" />
+                                                                    <img src="{{ $value->image ? asset('storage/'.$value->image) : '' }}" width="219" height="220" alt="Drugs" />
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -103,114 +103,10 @@
 
                             </article>
                         </div>
-
-
-
-
-
-
-
-
                     </div>
                 </div>
 
             </div>
-            <!-- <div id="block-homepagegamesblock" class="views-element-container">
-
-
-                <section id="new-games">
-                    <div class="title-holder">
-                        <h2>Newly Rated Games</h2>
-                        <a href="/search-pegi" class="btn"><span>Search Games</span></a>
-                    </div>
-
-                    <div class="slider">
-                        @foreach ($game as $value)
-                        <article class="game">
-                            <div class="game-content">
-                                <div class="description">
-                                    @if ($value->genreGame)
-                                    <div class="age-rating">
-                                        <img src="{{ asset('/storage/'.$value->genreGame->icon) }}" alt="" />
-                                    </div>
-                                    @endif
-
-                                    <div class="info">
-                                        <div class="info-inner">
-                                            <h3>{{ $value->name }}</h3>
-                                            <span class="publisher">{{ $value->main_description }}</span>
-                                            <span class="platform">PC</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                @if ($value->contentDescription)
-                                <div class="descriptors"><img src="{{ asset('/storage/'.$value->contentDescription->image) }}" alt="" /></div>
-                                @endif
-
-                            </div>
-                        </article>
-                        @endforeach
-                    </div>
-
-
-                </section>
-            </div> -->
-            <!-- <div class="views-element-container" id="block-views-block-important-links-block-2">
-
-
-                <div>
-                    <div class="js-view-dom-id-7c569a9b926369e232375c17f98eb609b064cd491e52d25bf040d636daf88d49">
-
-
-
-
-
-
-
-
-                        <div class="views-row">
-
-                            <article data-history-node-id="2" role="article" about="/pegi-age-rating-process" class="important-link">
-                                <div class="article-content">
-
-                                    <h3><span>The PEGI age rating process</span>
-                                    </h3>
-
-
-                                    <div class="field-video video-embed-field">
-                                        <div class="video-embed-field-provider-youtube video-embed-field-responsive-video"><iframe width="854" height="480" frameborder="0" allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/W_Uvf8sq7PU?autoplay=0&amp;start=0&amp;rel=0"></iframe>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="field-link link">
-                                        <a href="https://www.youtube.com/user/PEGIgames/">More Videos</a>
-                                    </div>
-
-                                    <div class="field-video-thumbnail image" style="background:url(https://pegi.info/sites/default/files/2017-12/video%20capture.jpeg);">
-                                        <span class="play"></span>
-                                    </div>
-
-                                    <div class="field-ribbon-title string">
-                                        PEGI Video
-                                    </div>
-
-                                </div>
-                            </article>
-
-                        </div>
-
-
-
-
-
-
-
-
-                    </div>
-                </div>
-
-            </div> -->
 
 
         </main>
