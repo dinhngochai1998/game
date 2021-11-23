@@ -38,29 +38,31 @@
 
                                             <div class="labels-holder">
                                                 @foreach ($genreGame as $value)
-                                                <div class="field-age-labels entity-reference" style="width: 10%;">
+                                                <a href="{{ route('wave.genre.game.detail', $value->slug) }}">
+                                                    <div class="field-age-labels entity-reference" style="width: 10%;">
 
 
-                                                    <article class="label-descriptor">
-                                                        <div class="article-content">
+                                                        <article class="label-descriptor">
+                                                            <div class="article-content">
 
-                                                            <h3><span>{{ $value->title }}</span>
-                                                            </h3>
+                                                                <h3><span>{{ $value->title }}</span>
+                                                                </h3>
 
 
-                                                            <div class="body text-with-summary">
-                                                                <p>{{ $value->description }}</p>
+                                                                <div class="body text-with-summary">
+                                                                    <p>{{ $value->description }}</p>
+                                                                </div>
+
+                                                                <div class="field-image image">
+                                                                    
+                                                                        <img src="{{ $value->icon ? asset('storage/'.$value->icon) : '' }}" width="181" height="220" alt="PEGI 3" typeof="foaf:Image" />
+
+                                                                </div>
+
                                                             </div>
-
-                                                            <div class="field-image image">
-                                                                <a href="{{ route('wave.genre.game.detail', $value->slug) }}">
-                                                                    <img src="{{ $value->icon ? asset('storage/'.$value->icon) : '' }}" width="181" height="220" alt="PEGI 3" typeof="foaf:Image" />
-                                                                </a>
-                                                            </div>
-
-                                                        </div>
-                                                    </article>
-                                                </div>
+                                                        </article>
+                                                    </div>
+                                                </a>
                                                 @endforeach
                                             </div>
 
@@ -93,7 +95,7 @@
                                             </div>
 
                                             <div class="field-labels-link link">
-                                                <a href="/what-do-the-labels-mean">Hơn nữa</a>
+                                                <a href="{{ route('wave.country') }}">Hơn nữa</a>
                                             </div>
                                         </div>
                                     </div>

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Genregame;
 use App\Models\Game;
 use App\Models\ContentDescriptor;
+use App\Models\Country;
 
 class HomeController extends \App\Http\Controllers\Controller
 {
@@ -47,5 +48,11 @@ class HomeController extends \App\Http\Controllers\Controller
 
         $genreGame =  $model->get();
         return view('game.search.index', compact('genreGame'));
+    }
+
+    public function country(Request $request)
+    {
+        $countries = Country::orderBy('name')->get();
+        return view('game.country', compact('countries'));
     }
 }
