@@ -10,7 +10,7 @@
             <h2 class="visually-hidden" id="block-pegi-main-menu-menu">Main navigation</h2>
             <ul>
                 <li>
-                    <a href="javascript:(0)">Country</a>
+                    <a href="javascript:(0)">Danh mục phân loại</a>
                     <ul>
                         @foreach($countries as $country)
                             <li>
@@ -20,7 +20,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="javascript:(0)" >DESCRIPTORS</a>
+                    <a href="javascript:(0)" >Tiêu chí đánh giá</a>
                     <ul>
                         @foreach($countries as $country)
                         <li>

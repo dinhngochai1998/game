@@ -14,7 +14,7 @@
             <main id="main">
                 <div id="block-pegi-content">
                     <div id="results" typeof="WebPage" class="page">
-                        <h1><span property="schema:name">Chuyên mục</span></h1>
+                        <h1><span property="schema:name">Tiêu chí đánh giá</span></h1>
                         <div class="page-content">
                             <div class="results-count"></div>
                             <div property="schema:text" class="body text-with-summary">
@@ -30,7 +30,7 @@
                                             <div class="info" style="width: 80%;">
                                                 <h3><a style="font-size: 24px;" href="{{ route('wave.descriptor.detail', $value->slug) }}">{{ $value->title }}</a></h3>
                                                 <br>
-                                                <span class="publisher">Đất nước :{{ $value->countryId->name }}</span>
+                                                <span class="publisher">By :{{ $value->countryId->name }}</span>
                                                 <span class="content-info">{{ $value->description }}</span>
                                             </div>
                                             {{-- <div class="technical-info">

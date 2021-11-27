@@ -10,7 +10,7 @@
                     <div class="js-view-dom-id-1603382be561472bf1899ee5e5be0e88bbe5e7bb226a400f505419c452bb0f34">
                         <div class="views-row">
                             <article data-history-node-id="17" role="article" about="/pegi-helps-parents-make-informed-decisions-when-buying-video-games" id="home-intro">
-                                <div class="wrapper">
+                                <div class="wrapper" style="margin-bottom: 78px;">
                                     <table class="table table-bordered">
                                         <thead>
                                             <tr>
@@ -22,7 +22,7 @@
                                         <tbody>
                                             <tr>
                                                 <td scope="row">{{ $genreGame->title }}</td>
-                                                <td scope="row">  <img src="{{ asset('storage/'.$genreGame->icon) }}" style="width:220px;height:220px;" alt="Drugs" typeof="foaf:Image" /></td>
+                                                <td scope="row">  <img src="{{ asset('storage/'.$genreGame->icon) }}" style="width:100px;height:100px;" alt="Drugs" typeof="foaf:Image" /></td>
                                                 <td>{{ $genreGame->description }}</td>
                                             </tr>
                                         </tbody>

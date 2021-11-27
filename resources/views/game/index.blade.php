@@ -33,7 +33,7 @@
                                         <div class="intro-content" style="margin:auto;">
 
                                             <div class="field-age-labels-title string">
-                                                HAI CẤP ĐỘ THÔNG TIN NHƯ HƯỚNG DẪN: NHÃN HIỆU PEGI TUỔI
+                                                Đánh giá phân loại, xếp hạng theo ESRB
                                             </div>
 
                                             <div class="labels-holder">
