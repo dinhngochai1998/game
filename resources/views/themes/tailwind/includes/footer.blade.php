@@ -4,7 +4,7 @@
             <h2 class="visually-hidden" id="block-pegi-footer-menu">Footer menu</h2>
             <ul>
                 <li>
-                    <a href="/about">Cổng thông tin tra cứu phân loại game theo lứa tuổi</a>
+                    <a href="/about" style="font-size: 11px;">Cổng thông tin tra cứu phân loại game theo lứa tuổi</a>
                 </li>
                 {{-- <li>
                     <a href="/about">Phát triển và vận hành bởi NISCI</a>
