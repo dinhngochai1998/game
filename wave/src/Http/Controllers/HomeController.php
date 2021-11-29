@@ -20,6 +20,7 @@ class HomeController extends \App\Http\Controllers\Controller
     {
 
         $genreGame = Genregame::get();
+        $countries = Country::with('games')->get();
         $game = Game::with('genreGame', 'contentDescription')->get();
         // $game = [];
         // if ($game != null) {
@@ -28,7 +29,7 @@ class HomeController extends \App\Http\Controllers\Controller
 
         $contentDescriptor = ContentDescriptor::get();
 
-        return view('game.index', compact('genreGame', 'game', 'contentDescriptor'));
+        return view('game.index', compact('genreGame', 'game', 'contentDescriptor', 'countries'));
     }
 
     public function search(Request $request)

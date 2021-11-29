@@ -5,7 +5,7 @@
 
     <div class="wrapper content-wrap">
         <main id="main">
-            <div class="views-element-container" id="block-views-block-homepage-intro-block-1">
+            {{-- <div class="views-element-container" id="block-views-block-homepage-intro-block-1">
                 <div>
                     <div class="">
                         <div class="views-row">
@@ -108,9 +108,51 @@
                     </div>
                 </div>
 
-            </div>
+            </div> --}}
 
+            
+                <div id="block-homepagegamesblock" class="views-element-container">
+                    @foreach ($countries as $country)
+                        @if(count($country->games) > 0)
+                            <section id="new-games" style="margin-top:50px;">
+                                <div class="title-holder">
+                                    <h2>{{ $country->name }} | <a href=" {{ route('wave.cate.descriptor', $country->slug) }}" >MÔ TẢ NỘI DUNG</a> | <a href="{{ route('wave.cate.genre.game', $country->slug) }}">DANH MỤC PHÂN LOẠI</a></h2>
+                                    {{-- <a href="/search-pegi" class="btn"><span>Search Games</span></a> --}}
+                                </div>
+                                    <div class="slider">
+                                        @foreach ($country->games as $value)
+                                            <article class="game">
+                                                <div class="game-content">
+                                                    <div class="description">
+                                                        <div class="age-rating">
+                                                            <a href="{{ route('wave.genre.game.detail', $value->slug) }}">
+                                                                <img src="{{ asset('/storage/'.$value->icon) }}" alt=""  />
+                                                            </a>
+                                                        </div>
 
+                                                        <div class="info">
+                                                            <div class="info-inner">
+                                                                    <h3>{{ $value->title }}</h3>
+                                                                    <span class="platform"><a href="{{ route('wave.genre.game.detail', $value->slug) }}">Xem chi tiết</a></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    {{-- @if ($value->description)
+                                                    <div class="descriptors"><img src="{{ asset('/storage/'.$value->contentDescription->image) }}" alt="" /></div>
+                                                    @endif --}}
+
+                                                </div>
+                                            </article>
+                                        @endforeach
+                                    </div>
+                            </section>
+                        @endif
+                    @endforeach
+                </div>
+
+        </main>
+        <div class="footer-push"></div>
+    </div>
         </main>
         <div class="footer-push"></div>
     </div>
