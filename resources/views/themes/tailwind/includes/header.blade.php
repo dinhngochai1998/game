@@ -36,7 +36,7 @@
                 </li>
 
                 <li>
-                    <a href="{{ route('wave.privacy') }}" title="Information for game publishers" data-drupal-link-system-path="node/62">Chính sách</a>
+                    <a href="{{ route('wave.privacy') }}" title="Information for game publishers" data-drupal-link-system-path="node/62">Tín tức</a>
                 </li>
             </ul>
         </nav>
