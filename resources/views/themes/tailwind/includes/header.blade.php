@@ -10,6 +10,9 @@
             padding-left: 0px !important;
             height:0px !important;
         }
+        #logo {
+            z-index: unset !important;
+        }
         .show-info{
             display: none;
         }
