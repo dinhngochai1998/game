@@ -5,6 +5,25 @@
     #logo a:after {
         top: 55px;
     }
+    @media (max-width: 480px) {
+        #header {
+            padding-left: 0px !important;
+            height:0px !important;
+        }
+        .show-info{
+            display: none;
+        }
+        #search {
+            margin-top: 60px;
+            margin-left: -2px;
+        }
+        #block-pegi-branding h5 {
+            left: 146px !important;
+        }
+        #block-pegi-branding h3 {
+            left: 140px !important;
+        }
+    }
 </style>
 <header id="header" style="padding-left:460px;height:165px">
     <div id="logo" style="width:475px;height: 165px;">
@@ -66,7 +85,11 @@
                 </li>
 
                 <li>
-                    <a href="{{ route('wave.about') }}">Về Chúng tôi</a>
+                    <a href="{{ route('wave.about') }}">Nội dung</a>
+                </li>
+
+                <li>
+                    <a href="">Hướng dẫn tra cứu</a>
                 </li>
 
                 <li>
@@ -81,19 +104,19 @@
     <div id="search">
         <div id="block-searchblock">
             <form class="pegi-search-form" data-drupal-selector="pegi-search-form" action="{{ route('wave.search') }}" method="GET" id="pegi-search-form" accept-charset="UTF-8">
-                <h2>Extended Search</h2>
+                <h2>Tra cứu mở rộng</h2>
                 <div class="inputtext-search-button">
 
                     <div class="js-form-item form-item js-form-type-search form-item-q js-form-item-q form-no-label">
 
-                        <input placeholder="Tìm kiếm" data-drupal-selector="edit-q" type="search" id="edit-q" name="search" value="" size="60" maxlength="128" class="form-search" />
+                        <input placeholder="Tra cứu" data-drupal-selector="edit-q" type="search" id="edit-q" name="search" value="" size="60" maxlength="128" class="form-search" />
 
                     </div>
-                    <input data-drupal-selector="edit-submit" type="submit" id="edit-submit" name="op" value="Tìm kiếm" class="button button--primary js-form-submit form-submit" />
+                    <input data-drupal-selector="edit-submit" type="submit" id="edit-submit" name="op" value="Tra cứu" class="button button--primary js-form-submit form-submit" />
 
                 </div>
                 <div class="expand-filters">
-                    <span>Tìm kiếm mở rộng</span>
+                    <span>Tra cứu mở rộng</span>
                 </div>
                 
                 <div class="exposed-filters js-form-wrapper form-wrapper" data-drupal-selector="edit-exposed-filters" id="edit-exposed-filters">
@@ -115,10 +138,10 @@
                             <option value="" selected="selected">Tất cả mô tả</option>
                         </select>
                     </div>
-                    <input type="submit" id="submit-button-exposed" value="Tìm kiếm" class="button button--primary js-form-submit form-submit" />
+                    <input type="submit" id="submit-button-exposed" value="Tra cứu" class="button button--primary js-form-submit form-submit" />
                 </div>
             </form>
         </div>
     </div>
-    <div style="margin-top:20px;text-align: center;"><h3>CỔNG THÔNG TIN PHÂN LOẠI TRÒ CHƠI ĐIỆN TỬ THEO LỨA TUỔI</h3></div>
+    <div class="show-info" style="margin-top:20px;text-align: center;"><h3>CỔNG THÔNG TIN PHÂN LOẠI TRÒ CHƠI ĐIỆN TỬ THEO LỨA TUỔI</h3></div>
 </header>
