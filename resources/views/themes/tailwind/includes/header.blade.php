@@ -120,5 +120,5 @@
             </form>
         </div>
     </div>
-    <div style="margin-top:20px;"><h3>CỔNG THÔNG TIN PHÂN LOẠI TRÒ CHƠI ĐIỆN TỬ THEO LỨA TUỔI</h3></div>
+    <div style="margin-top:20px;text-align: center;"><h3>CỔNG THÔNG TIN PHÂN LOẠI TRÒ CHƠI ĐIỆN TỬ THEO LỨA TUỔI</h3></div>
 </header>
