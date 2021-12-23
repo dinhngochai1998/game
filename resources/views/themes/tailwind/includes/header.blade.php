@@ -1,6 +1,40 @@
-<header id="header">
-    <div id="logo">
-        <div id="block-pegi-branding">
+<style>
+    #logo a:before {
+        content: "";
+    }
+    #logo a:after {
+        top: 55px;
+    }
+</style>
+<header id="header" style="padding-left:460px;height:165px">
+    <div id="logo" style="width:475px;height: 165px;">
+        <div id="block-pegi-branding" style="text-align: center;">
+        <h5 style="
+            position: absolute;
+            z-index: 99;
+            font-weight: bold;
+            left: 160px;
+            font-size: 13px;
+            margin-right: 31px;
+            top: 50px;
+        "> 
+        BỘ THÔNG TIN VÀ TRUYỀN THÔNG
+        <!-- VIỆN CÔNG NGHIỆP PHẦN MỀM VÀ NỘI DUNG SỐ -->
+    </h5>
+    <h3 style="
+            margin-top:30px;
+            position: absolute;
+            z-index: 99;
+            font-weight: bold;
+            left: 160px;
+            font-size: 17px;
+            line-height: 25px;
+            margin-right: 31px;
+            top: 45px;
+        "> 
+            VIỆN CÔNG NGHIỆP PHẦN MỀM <br> VÀ NỘI DUNG SỐ 
+    </h3>
+
             <a href="/" title="Home" rel="home">Pegi Public Site</a>
         </div>
     </div>
@@ -36,7 +70,7 @@
                 </li>
 
                 <li>
-                    <a href="{{ route('wave.privacy') }}" title="Information for game publishers" data-drupal-link-system-path="node/62">Tín tức</a>
+                    <a href="{{ route('wave.privacy') }}" title="Information for game publishers" data-drupal-link-system-path="node/62">Tin tức</a>
                 </li>
             </ul>
         </nav>
@@ -61,6 +95,7 @@
                 <div class="expand-filters">
                     <span>Tìm kiếm mở rộng</span>
                 </div>
+                
                 <div class="exposed-filters js-form-wrapper form-wrapper" data-drupal-selector="edit-exposed-filters" id="edit-exposed-filters">
                     <div class="js-form-item form-item js-form-type-select form-item-age js-form-item-age">
                         <label for="agecategories-exposed">Đất nước</label>
@@ -83,9 +118,7 @@
                     <input type="submit" id="submit-button-exposed" value="Tìm kiếm" class="button button--primary js-form-submit form-submit" />
                 </div>
             </form>
-
         </div>
-
-
     </div>
+    <div style="margin-top:20px;"><h3>CỔNG THÔNG TIN PHÂN LOẠI TRÒ CHƠI ĐIỆN TỬ THEO LỨA TUỔI</h3></div>
 </header>
