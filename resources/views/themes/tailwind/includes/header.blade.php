@@ -12,6 +12,7 @@
         }
         #logo {
             z-index: unset !important;
+            width: 400px !important;
         }
         .show-info{
             display: none;
@@ -22,9 +23,11 @@
         }
         #block-pegi-branding h5 {
             left: 146px !important;
+            top: 26px !important;
         }
         #block-pegi-branding h3 {
             left: 140px !important;
+            top: 20px !important;
         }
     }
 </style>
@@ -88,15 +91,15 @@
                 </li>
 
                 <li>
-                    <a href="{{ route('wave.about') }}">Nội dung</a>
-                </li>
-
-                <li>
                     <a href="">Hướng dẫn tra cứu</a>
                 </li>
 
                 <li>
                     <a href="{{ route('wave.privacy') }}" title="Information for game publishers" data-drupal-link-system-path="node/62">Tin tức</a>
+                </li>
+
+                <li>
+                    <a href="{{ route('wave.about') }}">Giới Thiệu</a>
                 </li>
             </ul>
         </nav>
@@ -146,5 +149,5 @@
             </form>
         </div>
     </div>
-    <div class="show-info" style="margin-top:20px;text-align: center;"><h3>CỔNG THÔNG TIN PHÂN LOẠI TRÒ CHƠI ĐIỆN TỬ THEO LỨA TUỔI</h3></div>
+    <div class="show-info" style="margin-top:20px;text-align: center;"><h3>CỔNG TRA CỨU HỆ THỐNG PHÂN LOẠI TRÒ CHƠI THEO LỨA TUỔI</h3></div>
 </header>
