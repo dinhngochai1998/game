@@ -12,6 +12,7 @@ Route::get('/category/descriptor/{country}', '\Wave\Http\Controllers\DetailContr
 Route::get('/country', '\Wave\Http\Controllers\HomeController@country')->name('wave.country');
 Route::get('/about', '\Wave\Http\Controllers\AboutController@index')->name('wave.about');
 Route::get('/news', '\Wave\Http\Controllers\PrivacyController@index')->name('wave.privacy');
+Route::get('/guide', '\Wave\Http\Controllers\GuideController@index')->name('wave.guide');
 Route::get('@{username}', '\Wave\Http\Controllers\ProfileController@index')->name('wave.profile');
 
 // Documentation routes

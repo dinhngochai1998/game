@@ -8,10 +8,10 @@
 		<div id="block-submenusidebarblock"></div>
 	</div>
 	<main id="main">
-        <div id="block-pegi-content">
+        <div id="block-pegi-content" style="margin-top: 50px;">
             <article data-history-node-id="25" role="article" about="/page/contact-us" typeof="schema:WebPage" class="page">
 
-                <h1><span property="schema:name">Chính sách</span></h1>
+                <h1><span property="schema:name">Tin tức</span></h1>
                 <span property="schema:name" content="Contact us" class="hidden"></span>
 
                 <div class="article-content" style="min-height: 0px;">

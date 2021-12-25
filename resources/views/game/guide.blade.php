@@ -11,12 +11,12 @@
         <div id="block-pegi-content" style="margin-top: 50px;">
             <article data-history-node-id="25" role="article" about="/page/contact-us" typeof="schema:WebPage" class="page">
 
-                <h1><span property="schema:name">Giới thiệu</span></h1>
+                <h1><span property="schema:name">Hướng dẫn tra cứu</span></h1>
                 <span property="schema:name" content="Contact us" class="hidden"></span>
 
                 <div class="article-content" style="min-height: 0px;">
                     <div property="schema:text" class="body text-with-summary">
-                        {!! $about->body !!}
+                        {!! $guide->body !!}
                     </div>
                 </div>
                 

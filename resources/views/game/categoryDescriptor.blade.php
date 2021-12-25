@@ -12,7 +12,7 @@
                 </div>
             </div>
             <main id="main">
-                <div id="block-pegi-content">
+                <div id="block-pegi-content" style="margin-top:50px;">
                     <div id="results" typeof="WebPage" class="page">
                         <h1><span property="schema:name">Tiêu chí đánh giá</span></h1>
                         <div class="page-content">
@@ -30,7 +30,7 @@
                                             <div class="info" style="width: 80%;">
                                                 <h3><a style="font-size: 24px;" href="{{ route('wave.descriptor.detail', $value->slug) }}">{{ $value->title }}</a></h3>
                                                 <br>
-                                                <span class="publisher">By :{{ $value->countryId->name }}</span>
+                                                <span class="publisher" style ="margin-top:20px;margin-right:-50px;">By :{{ $value->countryId->name }}</span>
                                                 <span class="content-info">{{ $value->description }}</span>
                                             </div>
                                             {{-- <div class="technical-info">

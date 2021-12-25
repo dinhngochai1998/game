@@ -23,13 +23,123 @@
         }
         #block-pegi-branding h5 {
             left: 146px !important;
-            top: 26px !important;
+            top: 51px !important;
+            font-size: 11px!important;
         }
         #block-pegi-branding h3 {
             left: 140px !important;
-            top: 20px !important;
+            top: 40px !important;
+            font-size: 14px!important;
         }
     }
+    @media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+    @media (min-width:480px)  {
+        /* #header {
+            padding-left: 210px !important;
+        }
+        #logo {
+            width: 500px !important;
+        }
+        .show-info{
+            display: none;
+        }
+        #block-pegi-branding h5 {
+            z-index: unset !important;
+        }
+        #block-pegi-branding h3 {
+            z-index: unset !important;
+        }
+        #search {
+            margin-top: 70px !important;
+        }
+        #nav-holder {
+            z-index: 9999 !important;
+        } */
+    }
+    @media (min-width:600px)  { 
+        #header {
+            padding-left: 510px !important;
+            height: 165px !important;
+        }
+        #logo {
+            width: 318px !important;
+            height: 165px !important;
+        }
+        #block-pegi-branding h5 {
+            left: 128px !important;
+            font-size: 9px!important;
+        }
+        #block-pegi-branding h3 {
+            left: 126px !important;
+            font-size: 10px!important;
+            line-height: 18px !important;
+        }
+        .show-info {
+            display: none;
+        }
+        #nav-toggle {
+            float: right;
+            margin-right: 30px;
+        }
+     }
+    @media (min-width:801px)  { 
+        #header {
+            padding-left: 565px !important;
+            height: 165px !important;
+        }
+        #logo {
+            width: 375px !important;
+            height: 165px !important;
+        }
+        #block-pegi-branding h5 {
+            left: 128px !important;
+            font-size: 12px!important;
+        }
+        #block-pegi-branding h3 {
+            left: 126px !important;
+            font-size: 14px!important;
+            line-height: 23px !important;
+        }
+        .show-info {
+            display: block;
+            margin-top: 15px !important;
+            margin-left: -165px !important;
+        }
+        .show-info h3{
+            font-size: 15px;
+        }
+        #nav-toggle {
+            float: right;
+            margin-right: 30px;
+        }
+     }
+    @media (min-width:1025px) { 
+        #header {
+            padding-left: 460px !important;
+            height: 165px !important;
+        }
+        #logo {
+            width: 475px !important;
+            height: 165px !important;
+        }
+        .show-info {
+            display: block;
+            margin-top: 20px !important;
+            margin-left: unset !important;
+        }
+        .show-info h3{
+            font-size: larger !important;
+        }
+        #block-pegi-branding h5 {
+            left: 180px !important;
+            font-size: 13px!important;
+        }
+        #block-pegi-branding h3 {
+            left: 160px !important;
+            font-size: 17px!important;
+        }
+    }
+    @media (min-width:1281px) { /* hi-res laptops and desktops */ }
 </style>
 <header id="header" style="padding-left:460px;height:165px">
     <div id="logo" style="width:475px;height: 165px;">
@@ -57,7 +167,7 @@
             margin-right: 31px;
             top: 45px;
         "> 
-            VIỆN CÔNG NGHIỆP PHẦN MỀM <br> VÀ NỘI DUNG SỐ 
+            VIỆN CÔNG NGHIỆP PHẦN MỀM <br> VÀ NỘI DUNG SỐ VIỆT NAM
     </h3>
 
             <a href="/" title="Home" rel="home">Pegi Public Site</a>
@@ -91,7 +201,7 @@
                 </li>
 
                 <li>
-                    <a href="">Hướng dẫn tra cứu</a>
+                    <a href="{{ route('wave.guide') }}">Hướng dẫn tra cứu</a>
                 </li>
 
                 <li>
