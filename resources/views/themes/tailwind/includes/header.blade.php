@@ -56,6 +56,17 @@
             z-index: 9999 !important;
         } */
     }
+    @media screen and (min-width:1025px) and (max-width:1300px) {
+        .guide-menu {
+            display: none !important;
+        }
+        .news-menu {
+            display: none !important;
+        }
+        .introduce-menu {
+            display: none !important;
+        }
+    }
     @media (min-width:600px)  { 
         #header {
             padding-left: 510px !important;
@@ -138,8 +149,19 @@
             left: 160px !important;
             font-size: 14px!important;
         }
+
     }
-    @media (min-width:1281px) { /* hi-res laptops and desktops */ }
+    @media (min-width:1368px) { 
+        .guide-menu {
+            display: block;
+        }
+        .news-menu {
+            display: block;
+        }
+        .introduce-menu {
+            display: block;
+        }
+     }
 </style>
 <header id="header" style="padding-left:460px;height:165px">
     <div id="logo" style="width:475px;height: 165px;">
@@ -200,16 +222,16 @@
 
                 </li>
 
-                <li>
-                    <a href="{{ route('wave.guide') }}">Hướng dẫn tra cứu</a>
+                <li class="guide-menu">
+                    <a href="{{ route('wave.guide') }}" >Hướng dẫn tra cứu</a>
                 </li>
 
-                <li>
-                    <a href="{{ route('wave.privacy') }}" title="Information for game publishers" data-drupal-link-system-path="node/62">Tin tức</a>
+                <li class="news-menu">
+                    <a href="{{ route('wave.privacy') }}" >Tin tức</a>
                 </li>
 
-                <li>
-                    <a href="{{ route('wave.about') }}">Giới Thiệu</a>
+                <li class="introduce-menu">
+                    <a href="{{ route('wave.about') }}" >Giới Thiệu</a>
                 </li>
             </ul>
         </nav>
