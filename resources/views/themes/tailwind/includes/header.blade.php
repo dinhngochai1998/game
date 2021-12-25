@@ -139,7 +139,7 @@
             margin-left: unset !important;
         }
         .show-info h3{
-            font-size: larger !important;
+            font-size: 16px !important;
         }
         #block-pegi-branding h5 {
             left: 180px !important;

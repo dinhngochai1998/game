@@ -28,7 +28,8 @@
                                                 </a>
                                             </div>
                                             <div class="info" style="width: 80%;">
-                                                <h3><a style="font-size: 24px;" href="{{ route('wave.descriptor.detail', $value->slug) }}">{{ $value->title }}</a></h3>
+                                            <!-- {{ route('wave.descriptor.detail', $value->slug) }} -->
+                                                <h3><a style="font-size: 24px;" href="#">{{ $value->title }}</a></h3>
                                                 <br>
                                                 <span class="publisher" style ="margin-top:20px;margin-right:-50px;">By :{{ $value->countryId->name }}</span>
                                                 <span class="content-info">{{ $value->description }}</span>
