@@ -115,11 +115,11 @@
      }
     @media (min-width:1025px) { 
         #header {
-            padding-left: 460px !important;
+            padding-left: 399px !important;
             height: 165px !important;
         }
         #logo {
-            width: 475px !important;
+            width: 415px !important;
             height: 165px !important;
         }
         .show-info {
@@ -132,11 +132,11 @@
         }
         #block-pegi-branding h5 {
             left: 180px !important;
-            font-size: 13px!important;
+            font-size: 11px!important;
         }
         #block-pegi-branding h3 {
             left: 160px !important;
-            font-size: 17px!important;
+            font-size: 14px!important;
         }
     }
     @media (min-width:1281px) { /* hi-res laptops and desktops */ }
