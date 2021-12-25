@@ -3,10 +3,23 @@
         content: "";
     }
     #logo a:after {
-        top: 55px;
+        top: 38px;
+        width: 90px;
+        left: 0px;
     }
-    @media (max-width: 480px) {
-        #header {
+    @media screen and (min-width:481px) and (max-width:1023px) {
+        .title-c {
+            top: 11px !important;
+         }
+    }
+     @media (max-width: 480px) {
+        .title-c {
+            top: 11px !important;
+         }
+         #logo a:after {
+            top: 20px !important;
+        }
+        /* #header {
             padding-left: 0px !important;
             height:0px !important;
         }
@@ -16,12 +29,12 @@
         }
         .show-info{
             display: none;
-        }
-        #search {
+        } */
+        /* #search {
             margin-top: 60px;
             margin-left: -2px;
-        }
-        #block-pegi-branding h5 {
+        } */
+        /* #block-pegi-branding h5 {
             left: 146px !important;
             top: 51px !important;
             font-size: 11px!important;
@@ -30,10 +43,10 @@
             left: 140px !important;
             top: 40px !important;
             font-size: 14px!important;
-        }
+        } */
     }
-    @media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
-    @media (min-width:480px)  {
+   /* @media (min-width:320px)  { smartphones, portrait iPhone, portrait 480x320 phones (Android) }
+     @media (min-width:480px)  {
         /* #header {
             padding-left: 210px !important;
         }
@@ -55,7 +68,7 @@
         #nav-holder {
             z-index: 9999 !important;
         } */
-    }
+    /* }
     @media screen and (min-width:1025px) and (max-width:1300px) {
         .guide-menu {
             display: none !important;
@@ -161,24 +174,27 @@
         .introduce-menu {
             display: block;
         }
+     } */
+     .title-c {
+        position: absolute;
+        z-index: 99;
+        font-weight: bold;
+        left: 73px;
+        font-size: 11px;
+        margin-right: 31px;
+        top: 27px;
+        text-align: center;
      }
 </style>
-<header id="header" style="padding-left:460px;height:165px">
-    <div id="logo" style="width:475px;height: 165px;">
-        <div id="block-pegi-branding" style="text-align: center;">
-        <h5 style="
-            position: absolute;
-            z-index: 99;
-            font-weight: bold;
-            left: 160px;
-            font-size: 13px;
-            margin-right: 31px;
-            top: 50px;
-        "> 
-        BỘ THÔNG TIN VÀ TRUYỀN THÔNG
-        <!-- VIỆN CÔNG NGHIỆP PHẦN MỀM VÀ NỘI DUNG SỐ -->
-    </h5>
-    <h3 style="
+<header id="header" style="padding-left: 310px;">
+    <div id="logo" style="width: 326px;">
+        <div id="block-pegi-branding">
+        <h5 class="title-c"> 
+            Viện CMPM & NDS Việt Nam
+            <br>
+            CỔNG TRA CỨU HỆ THỐNG PHÂN LOẠI TRÒ CHƠI THEO LỨA TUỔI
+        </h5>
+    <!-- <h3 style="
             margin-top:30px;
             position: absolute;
             z-index: 99;
@@ -190,7 +206,7 @@
             top: 45px;
         "> 
             VIỆN CÔNG NGHIỆP PHẦN MỀM <br> VÀ NỘI DUNG SỐ VIỆT NAM
-    </h3>
+    </h3> -->
 
             <a href="/" title="Home" rel="home">Pegi Public Site</a>
         </div>
@@ -281,5 +297,5 @@
             </form>
         </div>
     </div>
-    <div class="show-info" style="margin-top:20px;text-align: center;"><h3>CỔNG TRA CỨU HỆ THỐNG PHÂN LOẠI TRÒ CHƠI THEO LỨA TUỔI</h3></div>
+    <!-- <div class="show-info" style="margin-top:20px;text-align: center;"><h4 style="color: #0d7abe;">CỔNG TRA CỨU HỆ THỐNG PHÂN LOẠI TRÒ CHƠI THEO LỨA TUỔI</h4></div> -->
 </header>
