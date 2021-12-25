@@ -19,6 +19,9 @@
          #logo a:after {
             top: 20px !important;
         }
+        #search {
+            margin-left: -310px !important;
+        }
         /* #header {
             padding-left: 0px !important;
             height:0px !important;
@@ -45,6 +48,28 @@
             font-size: 14px!important;
         } */
     }
+    @media screen and (min-width:1025px) and (max-width:1300px) {
+        .guide-menu {
+            display: none !important;
+        }
+        .news-menu {
+            display: none !important;
+        }
+        .introduce-menu {
+            display: none !important;
+        }
+    }
+    @media (min-width:1368px) { 
+        .guide-menu {
+            display: block;
+        }
+        .news-menu {
+            display: block;
+        }
+        .introduce-menu {
+            display: block;
+        }
+     }
    /* @media (min-width:320px)  { smartphones, portrait iPhone, portrait 480x320 phones (Android) }
      @media (min-width:480px)  {
         /* #header {

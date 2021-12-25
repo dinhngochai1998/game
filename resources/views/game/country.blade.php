@@ -6,7 +6,7 @@
 
     <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
 
-        <div class="wrapper content-wrap">
+        <div class="wrapper content-wrap" style="padding-top: 100px;">
             <div id="sidebar-left">
                 <div id="block-submenusidebarblock">
                 </div>
