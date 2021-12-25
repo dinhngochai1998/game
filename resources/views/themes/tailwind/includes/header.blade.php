@@ -67,6 +67,21 @@
         .introduce-menu {
             display: none !important;
         }
+        #search {
+            margin-left: 0 !important;
+        }
+        #logo a {
+            box-shadow: 0 0 15px 1px rgb(0 0 0 / 35%) !important;
+        }
+
+        .title-c {
+            top: 30px !important;
+        }
+
+        #logo a:after {
+            top: 37px !important;
+        }
+        
     }
     @media (min-width:1368px) { 
         .guide-menu {
@@ -77,6 +92,18 @@
         }
         .introduce-menu {
             display: block;
+        }
+        #search {
+            margin-left: 0 !important;
+        }
+        #logo a {
+            box-shadow: 0 0 15px 1px rgb(0 0 0 / 35%) !important;
+        }
+        .title-c {
+            top: 30px !important;
+        }
+        #logo a:after {
+            top: 37px !important;
         }
     }
     @media screen and (min-width:320px) and (max-width:413px) {
