@@ -12,7 +12,7 @@
             top: 11px !important;
          }
     }
-     @media (max-width: 480px) {
+    @media screen and (min-width:414px) {
         .title-c {
             top: 11px !important;
          }
@@ -21,6 +21,15 @@
         }
         #search {
             margin-left: -310px !important;
+        }
+        #logo a {
+            box-shadow: unset;
+        }
+        #search.open {
+            margin-left: 12px !important;
+        }
+        #nav-toggle {
+            margin-left: 32px !important;
         }
         /* #header {
             padding-left: 0px !important;
@@ -69,9 +78,28 @@
         .introduce-menu {
             display: block;
         }
-     }
-   /* @media (min-width:320px)  { smartphones, portrait iPhone, portrait 480x320 phones (Android) }
-     @media (min-width:480px)  {
+    }
+    @media screen and (min-width:320px) and (max-width:413px) {
+        #nav-toggle {
+            margin-left: -8px !important;
+        }
+        .title-c {
+            top: 11px !important;
+         }
+         #logo a:after {
+            top: 20px !important;
+        }
+        #search {
+            margin-left: -310px !important;
+        }
+        #logo a {
+            box-shadow: unset;
+        }
+        #search.open {
+            margin-left: 12px !important;
+        }
+    }
+    /* @media (min-width:480px)  {
         /* #header {
             padding-left: 210px !important;
         }

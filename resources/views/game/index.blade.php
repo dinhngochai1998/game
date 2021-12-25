@@ -54,9 +54,12 @@
                                                                 </div>
 
                                                                 <div class="field-image image">
-                                                                    
+                                                                    @if($value->icon)
                                                                         <img src="{{ $value->icon ? asset('storage/'.$value->icon) : '' }}" width="181" height="220" alt="PEGI 3" typeof="foaf:Image" />
-
+                                                                    @else
+                                                                        <img src="" width="181" height="220" alt="PEGI 3" typeof="foaf:Image" />
+                                                                    @endif
+                                                                        
                                                                 </div>
 
                                                             </div>
@@ -85,7 +88,12 @@
 
                                                             <div class="field-image image">
                                                                 <a href="{{ route('wave.descriptor.detail', $value->slug) }}">
-                                                                    <img src="{{ $value->image ? asset('storage/'.$value->image) : '' }}" width="219" height="220" alt="Drugs" />
+                                                                    @if($value->image)
+                                                                        <img src="{{ $value->image ? asset('storage/'.$value->image) : '' }}" width="219" height="220" alt="Drugs" />
+                                                                    @else
+                                                                        <img src="" width="219" height="220" alt="Drugs" />
+                                                                    @endif
+                                                                    
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -126,7 +134,12 @@
                                                     <div class="description">
                                                         <div class="age-rating">
                                                             <a href="{{ route('wave.genre.game.detail', $value->slug) }}">
-                                                                <img src="{{ asset('/storage/'.$value->icon) }}" alt=""  />
+                                                                @if($value->icon)
+                                                                    <img src="{{ asset('/storage/'.$value->icon) }}" alt=""  />
+                                                                @else
+                                                                    <img src="" width="219" height="220" alt="Drugs" />
+                                                                @endif
+
                                                             </a>
                                                         </div>
 
