@@ -39,6 +39,7 @@
                                                 <span class="publisher">{{ $value->countryId->name }}</span>
                                                 <span class="content-info">{{ $value->description }}</span>
                                             </div>
+                                            <a href="{{ route('wave.genre.game.detail', $value->slug) }}" style="padding: 10px;border-radius: 7px;float: right;background: #03b8f4;cursor: pointer;color: #fff;text-decoration: none;margin-bottom: 20px;">Xem chi tiết</a>
                                             {{-- <div class="technical-info">
                                                 <span class="platform">
                                                     <span class="feature-label">Release Dates &amp; Platforms:</span><br>
