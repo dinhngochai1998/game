@@ -31,7 +31,7 @@
                                             <!-- {{ route('wave.descriptor.detail', $value->slug) }} -->
                                                 <h3><a style="font-size: 24px;" href="#">{{ $value->title }}</a></h3>
                                                 <br>
-                                                <span class="publisher" style ="margin-top:20px;margin-right:-50px;">By :{{ $value->countryId->name }}</span>
+                                                <span class="publisher" style ="margin-top:20px;margin-right:-50px;">{{ $value->countryId->name }}</span>
                                                 <span class="content-info">{{ $value->description }}</span>
                                             </div>
                                             {{-- <div class="technical-info">

@@ -36,7 +36,7 @@
                                             <div class="info" style="width: 80%;">
                                                 <h3><a style="font-size: 24px;" href="{{ route('wave.genre.game.detail', $value->slug) }}">{{ $value->title }}</a></h3>
                                                 <br>
-                                                <span class="publisher">Đất nước :{{ $value->countryId->name }}</span>
+                                                <span class="publisher">{{ $value->countryId->name }}</span>
                                                 <span class="content-info">{{ $value->description }}</span>
                                             </div>
                                             {{-- <div class="technical-info">

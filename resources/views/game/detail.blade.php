@@ -89,7 +89,7 @@
                 <div class="js-view-dom-id-1603382be561472bf1899ee5e5be0e88bbe5e7bb226a400f505419c452bb0f34">
                     <div class="views-row">
                         <article data-history-node-id="17" role="article" about="/pegi-helps-parents-make-informed-decisions-when-buying-video-games" id="home-intro">
-                            <div class="wrapper" style="padding-top: 100px;">
+                            <div class="wrapper" style="margin-bottom: 78px;padding-top: 74px;">
                                 <div class="card text-center" style="width: 100%;">
                                     <div class="card-header">
                                         <div class="title-holder">

@@ -30,7 +30,7 @@
                                             <div class="info" style="width: 100%;">
                                                 <h3><a style="font-size: 24px;" href="{{ route('wave.genre.game.detail', $value->slug) }}">{{ $value->title }}</a></h3>
                                                 <br>
-                                                <span style ="margin-top:20px;margin-right:-50px;" class="publisher">By :{{ $value->countryId->name }}</span>
+                                                <span style ="margin-top:20px;margin-right:-50px;" class="publisher">{{ $value->countryId->name }}</span>
                                                 <span class="content-info">{{ $value->description }}</span>
                                                 <a href="{{ route('wave.cate.descriptor', $value->countryId->slug) }}" style="padding: 10px;border-radius: 7px;float: right;background: #03b8f4;cursor: pointer;color: #fff;text-decoration: none;margin-bottom: 20px;">Xem chi tiết</a>
                                             </div>
