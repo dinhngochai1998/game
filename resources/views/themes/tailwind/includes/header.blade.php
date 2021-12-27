@@ -300,6 +300,11 @@
         top: 27px;
         text-align: center;
      }
+     @media screen and (min-width:1300px) and (max-width:1367px) {
+        #search {
+            margin-left: 0 !important;
+        }
+     }
 </style>
 <header id="header" style="padding-left: 310px;">
     <div id="logo" style="width: 326px;">
