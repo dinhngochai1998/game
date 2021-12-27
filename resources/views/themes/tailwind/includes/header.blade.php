@@ -36,6 +36,11 @@
             margin-left: auto !important;
             margin-right: 16px;
         }
+
+        #block-pegi-main-menu ul {
+            display: block !important;
+        }
+        
     }
 
     @media screen and (min-width:481px) and (max-width:768px) {
@@ -45,6 +50,9 @@
         #nav-toggle {
             float: right ;
             margin-right: 104px !important;
+        }
+        #block-pegi-main-menu ul {
+            display: block !important;
         }
     }
     @media screen and (min-width:414px) {
@@ -65,6 +73,9 @@
         }
         #nav-toggle {
             margin-left: 32px !important;
+        }
+        #block-pegi-main-menu ul {
+            display: block !important;
         }
         /* #header {
             padding-left: 0px !important;
@@ -159,6 +170,9 @@
         }
         #search.open {
             margin-left: 12px !important;
+        }
+        #block-pegi-main-menu ul {
+            display: block !important;
         }
     }
     /* @media (min-width:480px)  {
