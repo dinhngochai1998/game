@@ -3,7 +3,7 @@
 @section('content')
 
 
-<div class="wrapper content-wrap" style="padding-top: 100px;">
+<div class="wrapper content-wrap">
 	<div id="sidebar-left">
 		<div id="block-submenusidebarblock"></div>
 	</div>

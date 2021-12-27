@@ -1,4 +1,9 @@
 <style>
+    @media (max-width: 1024px){
+        #nav-holder, #nav-toggle {
+            display: flex;
+        }
+    }
     #logo a:before {
         content: "";
     }
@@ -15,7 +20,25 @@
     #header.hide {
         top: unset;
     }
-    @media screen and (min-width:481px) and (max-width:1023px) {
+    #block-footer>ul>li>ul, #block-mainnavigation>ul>li>ul, #block-pegi-footer>ul>li>ul, #block-pegi-main-menu>ul>li>ul{
+        z-index: 99;
+    }
+    #block-pegi-main-menu ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    #block-pegi-main-menu ul li{
+        white-space: nowrap;
+        margin-left: 0;        
+    }
+    @media screen and (min-width: 414px){
+        #nav-toggle.important {
+            margin-left: auto !important;
+            margin-right: 16px;
+        }
+    }
+
+    @media screen and (min-width:481px) and (max-width:768px) {
         .title-c {
             top: 11px !important;
         }
@@ -96,7 +119,7 @@
         
     }
     @media (min-width:1368px) { 
-        /* .guide-menu {
+        .guide-menu {
             display: block;
         }
         .news-menu {
@@ -104,7 +127,7 @@
         }
         .introduce-menu {
             display: block;
-        } */
+        }
         #search {
             margin-left: 0 !important;
         }
@@ -345,7 +368,7 @@
         </nav>
 
 
-        <button id="nav-toggle"><span class="bars"></span>Menu</button>
+        <button id="nav-toggle" class="important"><span class="bars"></span>Menu</button>
     </div>
     <div id="search">
         <div id="block-searchblock">
