@@ -7,10 +7,22 @@
         width: 90px;
         left: 0px;
     }
+    #header {
+        transition:unset;
+        top: 0px;
+        margin-top: 20px;
+    }
+    #header.hide {
+        top: unset;
+    }
     @media screen and (min-width:481px) and (max-width:1023px) {
         .title-c {
             top: 11px !important;
-         }
+        }
+        #nav-toggle {
+            float: right ;
+            margin-right: 104px !important;
+        }
     }
     @media screen and (min-width:414px) {
         .title-c {
@@ -58,7 +70,7 @@
         } */
     }
     @media screen and (min-width:1025px) and (max-width:1300px) {
-        .guide-menu {
+        /* .guide-menu {
             display: none !important;
         }
         .news-menu {
@@ -66,7 +78,7 @@
         }
         .introduce-menu {
             display: none !important;
-        }
+        } */
         #search {
             margin-left: 0 !important;
         }
@@ -84,7 +96,7 @@
         
     }
     @media (min-width:1368px) { 
-        .guide-menu {
+        /* .guide-menu {
             display: block;
         }
         .news-menu {
@@ -92,7 +104,7 @@
         }
         .introduce-menu {
             display: block;
-        }
+        } */
         #search {
             margin-left: 0 !important;
         }

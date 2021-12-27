@@ -70,7 +70,7 @@
                                             </div>
 
                                             <div class="field-descriptors-title string">
-                                                MÔ TẢ NỘI DUNG
+                                                Tiêu chí phân loại
                                             </div>
 
                                             <div class="labels-holder">
@@ -124,7 +124,7 @@
                         @if(count($country->games) > 0)
                             <section id="new-games" style="margin-top:50px;">
                                 <div class="title-holder">
-                                    <h2>{{ $country->name }} | <a href=" {{ route('wave.cate.descriptor', $country->slug) }}" >MÔ TẢ NỘI DUNG</a> | <a href="{{ route('wave.cate.genre.game', $country->slug) }}">DANH MỤC PHÂN LOẠI</a></h2>
+                                    <h2>{{ $country->name }} | <a href=" {{ route('wave.cate.descriptor', $country->slug) }}" >Tiêu chí phân loại</a> | <a href="{{ route('wave.cate.genre.game', $country->slug) }}">DANH MỤC PHÂN LOẠI</a></h2>
                                     {{-- <a href="/search-pegi" class="btn"><span>Search Games</span></a> --}}
                                 </div>
                                     <div class="slider">

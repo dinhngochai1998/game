@@ -93,7 +93,7 @@
                                 <div class="card text-center" style="width: 100%;">
                                     <div class="card-header">
                                         <div class="title-holder">
-                                            <h1 style="color: #000;">MÔ TẢ NỘI DUNG</h1>
+                                            <h1 style="color: #000;">Tiêu chí phân loại</h1>
                                         </div>
                                         <nav role="navigation" aria-labelledby="block-pegi-footer-menu" id="block-pegi-footer" style="background: white;">
                                             <ul>
