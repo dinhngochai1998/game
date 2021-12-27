@@ -3,7 +3,7 @@
 @section('content')
 <div class="dialog-off-canvas-main-canvas">
 
-    <div class="wrapper content-wrap" style="padding-top: 100px;">
+    <div class="wrapper content-wrap" style="padding-top: 145px;">
         <main id="main">
             {{-- <div class="views-element-container" id="block-views-block-homepage-intro-block-1">
                 <div>
